@@ -32,7 +32,7 @@ const Header = ({ toggleSidebar }: HeaderProps): JSX.Element => {
 
         {/* Search bar */}
         <div
-          className={`... ${
+          className={`relative rounded-md shadow-sm ${
             theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-white text-gray-900'
           }`}
         >
