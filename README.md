@@ -49,7 +49,7 @@ This is a demonstration project that showcases UI development skills. To explore
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mediaflow.git
+git clone https://github.com/caseyshiring/mediaflow.git
 cd mediaflow
 
 # Install dependencies
