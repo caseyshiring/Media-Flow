@@ -1,52 +1,55 @@
 # MediaFlow
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)
-![React](https://img.shields.io/badge/React-18.2-blue.svg)
+MediaFlow is a showcase React application that demonstrates modern front-end architecture and UI/UX design principles for a cloud-based media asset management platform. This project is a design prototype that highlights thoughtful component structure, responsive layouts, and attention to detail in user experience.
 
-MediaFlow is a UI for cloud-based media asset management. Provides an elegant interface for post-production teams to manage and collaborate on media assets.
+![MediaFlow Demo Screenshot](./docs/screenshot1.png)
 
-![MediaFlow Demo Screenshot](./docs/screenshot.png)
+---
 
-## Features
+![MediaFlow Demo Screenshot](./docs/screenshot2.png)
 
-- **Blazing-fast media browsing**: Optimized loading and caching strategies
-- **Intuitive organization**: Tag-based filtering and smart search
-- **Seamless collaboration**: Real-time updates and commenting
-- **Modern UI**: Clean, accessible design with dark mode support
-- **Performance metrics**: Built-in usage analytics
+## Purpose
 
-## Tech Stack
+This project was created to demonstrate front-end development expertise and design thinking. While it's not intended for production use, it showcases:
+
+- **Component Architecture**: Structured, modular approach to building React applications
+- **UI/UX Design**: Thoughtful user flows and interface design
+- **Clean Code Practices**: Well-organized, readable, and maintainable code patterns
+- **TypeScript Implementation**: Strong typing for improved developer experience and code quality
+- **Responsive Design**: Adaptive layouts for all device sizes
+
+## Technical Stack
 
 - **Framework**: React 18 with TypeScript
-- **Build**: Vite for fast builds and hot module replacement
-- **Styling**: Tailwind CSS with custom theme
-- **State Management**: React Query for server state, Zustand for UI state
-- **Testing**: Vitest and React Testing Library
-- **CI/CD**: GitHub Actions
+- **Build Tool**: Vite for fast development and optimized production builds
+- **Styling**: TailwindCSS with custom theming
+- **State Management**: React Hooks with Context
+- **Testing Setup**: Vitest and React Testing Library
+- **Code Quality**: ESLint, Prettier, and Husky for pre-commit hooks
 
-## Architecture
+## Architectural Highlights
 
-MediaFlow follows a modular, component-based architecture:
+- **Atomic Design Principles**: Components built from small, reusable pieces
+- **Feature-Based Organization**: Files structured by feature for better maintainability
+- **Theme System**: Complete dark/light mode support with smooth transitions
+- **Responsive Layouts**: Mobile-first approach to UI design
+- **Accessibility Considerations**: Semantic HTML and ARIA attributes
 
-- **Component Structure**: Atomic design principles with smart/presentational pattern
-- **State Management**: Server state and UI state cleanly separated
-- **Code Organization**: Feature-based organization for better maintainability
-- **Type Safety**: Strong TypeScript typing throughout the codebase
+## Design Features
 
-## 📦 Getting Started
+- **Dashboard View**: Data visualization and quick access to recent files
+- **Media Browser**: Grid and list views with filtering capabilities
+- **Project Management**: Organization of media files by project
+- **Detail Views**: Complete information and metadata for individual assets
+- **Loading States**: Loading placeholders for improved user experience
 
-### Prerequisites
+## Getting Started
 
-- Node.js 18+
-- npm or yarn
-
-### Installation
+This is a demonstration project that showcases UI development skills. To explore the codebase:
 
 ```bash
 # Clone the repository
-git clone https://github.com/cshiring/mediaflow.git
+git clone https://github.com/yourusername/mediaflow.git
 cd mediaflow
 
 # Install dependencies
@@ -56,48 +59,27 @@ npm install
 npm run dev
 ```
 
-### Available Scripts
+## Project Structure
 
-- `npm run dev` - Start the development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run test` - Run tests
+The codebase is organized into logical, feature-based components:
 
-## Testing
+- **/components/common**: Reusable UI elements
+- **/components/layout**: Page structure components
+- **/components/dashboard**: Dashboard-specific components
+- **/components/media**: Media management components
+- **/hooks**: Custom React hooks
+- **/utils**: Helper functions and utilities
 
-MediaFlow uses Vitest and React Testing Library for testing:
+## Development Philosophy
 
-```bash
-# Run all tests
-npm run test
+This project embodies modern front-end development principles:
 
-# Run tests with coverage report
-npm run test:coverage
+- **Declarative UI**: React components that describe what to render
+- **Separation of Concerns**: Clear boundaries between UI, logic, and state
+- **Progressive Enhancement**: Core functionality works in all environments
+- **Micro-interactions**: Small details that enhance the user experience
+- **Performance Optimization**: Efficient rendering and resource usage
 
-# Run tests in watch mode
-npm run test:watch
-```
+## Note on Functionality
 
-## Standards
-
-- **Accessibility**: WCAG 2.1 AA standards compliance
-
-## Responsive Design
-
-MediaFlow is designed to work on all device sizes:
-
-- Mobile-first development approach
-- Adaptive layouts for different screen sizes
-- Touch-friendly UI elements
-- Optimized performance on mobile devices
-
-## Security Considerations
-
-- Input validation and sanitization
-- Protection against common web vulnerabilities
-- Secure authentication patterns
-- Environment-based configuration
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This is primarily a UI prototype demonstrating front-end skills. While the interface is fully implemented, backend functionality is simulated with mock data. In a production environment, this would connect to real APIs for data persistence and cloud storage functionality.
